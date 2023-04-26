@@ -1,0 +1,54 @@
+GET http://localhost:3000/categories
+###
+GET http://localhost:3000/categories/1
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name": "Category 3"
+}
+###
+PATCH http://localhost:3000/categories/1
+Content-Type: application/json
+
+{
+    "name": "Category 1 updated"
+}
+
+###
+DELETE http://localhost:3000/categories/2
+
+###
+GET http://localhost:3000/products
+###
+GET http://localhost:3000/products/1
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "price": 100,
+    "categoryId": 3
+}
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+   
+}
+
+###
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+    "name": "Product 1 updated",
+    "price": 200
+}
+
+###
+DELETE http://localhost:3000/products/2
